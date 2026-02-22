@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Support - DashDish</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo-container">
+        <img src="logo.png" alt="DashDish Logo" class="logo">
+    </div>
+    <div class="search-container">
+        <input type="text" placeholder="Search restaurants or dishes..." class="search-bar">
+    </div>
+    <div class="auth-container">
+        <button class="login-btn">Login</button>
+        <button class="signup-btn">Sign Up</button>
+    </div>
+</header>
+
+<main class="order-main">
+    <div class="order-wrapper">
+
+        <div class="section-card">
+            <h1>Contact Support</h1>
+            <p>We are here to help you with your order.</p>
+            <p><strong>Order ID:</strong> #DD10234</p>
+        </div>
+
+        <div class="support-content">
+
+            <div class="support-form-card">
+                <form id="support-form">
+
+                    <label for="issue-type">Issue Type</label>
+                    <select id="issue-type" required>
+                        <option value="">Select Issue</option>
+                        <option>Order Delay</option>
+                        <option>Wrong Item Delivered</option>
+                        <option>Payment Issue</option>
+                        <option>Refund Request</option>
+                        <option>Other</option>
+                    </select>
+
+                    <label for="description">Description</label>
+                    <textarea id="description" rows="5" required></textarea>
+
+                    <label for="screenshot">Upload Screenshot (Optional)</label>
+                    <input type="file" id="screenshot">
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+
+                    <label>Priority</label>
+                    <div class="priority-options">
+                        <input type="radio" name="priority" value="normal" checked> Normal
+                        <input type="radio" name="priority" value="urgent"> Urgent
+                    </div>
+
+                    <button type="submit" class="primary-btn">Submit</button>
+                </form>
+
+                <div id="success-message">
+                    <p><strong>Support request submitted successfully.</strong></p>
+                    <p>Ticket Number: <span id="ticket-number"></span></p>
+                </div>
+            </div>
+
+            <div class="help-info-card">
+                <h2>Need Immediate Help?</h2>
+                <p><strong>Phone:</strong> 1-800-123-4567</p>
+                <p><strong>Email:</strong> support@dashdish.com</p>
+                <p><strong>Live Chat:</strong> Available 24/7</p>
+
+                <h3>FAQ</h3>
+
+                <div class="faq-item">
+                    <button class="faq-question">How long does refund take?</button>
+                    <div class="faq-answer">
+                        Refunds typically take 3 to 5 business days.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">How to track order?</button>
+                    <div class="faq-answer">
+                        Use the tracking link sent in your confirmation email or inside the app.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">How to cancel order?</button>
+                    <div class="faq-answer">
+                        You can cancel within 5 minutes via the app or by contacting support.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<script src="booking.js">
+</script>
+
+</body>
+</html>

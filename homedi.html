@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashDish</title>
+    <link rel="stylesheet" href="homedi.css">
+</head>
+<body>
+
+    <div class="header-container">
+        <div class="header-left">
+            <img class="logo" src="logo.png" alt="DashDish Logo">
+        </div>
+
+        <div class="header-center">
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input class="search-input" type="text" placeholder="Find your favorite dish..." name="search">
+                    <button class="search-btn" type="submit">🍽️</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <div class="auth-buttons">
+                <button class="btn-login" onclick="window.location.href='login.html'">Log In</button>
+                <button class="btn-signup" onclick="window.location.href='login.html'">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="options-section">
+        <div class="content-wrapper options-wrapper">
+             <button class="nav-tab active" >
+                <span class="icon-circle">🍽️</span>
+                Dining Out
+             </button>
+             <button class="nav-tab" onclick="window.location.href='homede.html'">
+                <span class="icon-circle" >🛵</span>
+                Delivery
+             </button>
+        </div>
+    </div>
+
+    <section class="collections-section">
+        <div class="content-wrapper">
+            <div class="collections-header">
+                <div class="header-text">
+                    <h2>Collections</h2>
+                    <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Delhi NCR, based on trends</p>
+                </div>
+                <a href="#" class="view-all-link">All collections in Delhi NCR <span class="arrow">▶</span></a>
+            </div>
+
+            <div class="carousel-container">
+                <button class="scroll-btn left-btn" onclick="scrollGrid('left')">❮</button>
+                
+                <div class="collections-grid" id="scrollGrid">
+                    
+                    <div class="collection-card">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Insta-worthy">
+                        <div class="card-content">
+                            <h3>Insta-worthy spots</h3>
+                            <span>44 Places <span class="arrow">▶</span></span>
+                        </div>
+                    </div>
+
+                    <div class="collection-card">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Trending">
+                        <div class="card-content">
+                            <h3>Top trending spots</h3>
+                            <span>34 Places <span class="arrow">▶</span></span>
+                        </div>
+                    </div>
+
+                    <div class="collection-card">
+                        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="New in town">
+                        <div class="card-content">
+                            <h3>New in town</h3>
+                            <span>55 Places <span class="arrow">▶</span></span>
+                        </div>
+                    </div>
+
+                    <div class="collection-card">
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Omakase">
+                        <div class="card-content">
+                            <h3>Great Cafes</h3>
+                            <span>17 Places <span class="arrow">▶</span></span>
+                        </div>
+                    </div>
+
+                    <div class="collection-card">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pizza">
+                        <div class="card-content">
+                            <h3>Best Pizza</h3>
+                            <span>22 Places <span class="arrow">▶</span></span>
+                        </div>
+                    </div>
+
+                    <div class="collection-card">
+                        <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Burgers">
+                        <div class="card-content">
+                            <h3>Juicy Burgers</h3>
+                            <span>12 Places <span class="arrow">▶</span></span>
+                        </div>
+                    </div>
+
+                     <div class="collection-card">
+                        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pasta">
+                        <div class="card-content">
+                            <h3>Italian Special</h3>
+                            <span>9 Places <span class="arrow">▶</span></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="scroll-btn right-btn" onclick="scrollGrid('right')">❯</button>
+            </div>
+        </div>
+    </section>
+    <section class="famous-restaurants-section">
+        <div class="res-wrapper">
+            <h2 class="res-section-title">Restaurants in Delhi NCR</h2>
+            
+            <div class="res-grid">
+                <div class="res-card">
+                    <div class="res-img-header">
+                        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Restaurant Image">
+                        <div class="res-offer-tag">Flat 20% OFF</div>
+                    </div>
+                    <div class="res-info">
+                        <div class="res-row-top">
+                            <h3 class="res-name">Ca La Vie Kitchen & Bar</h3>
+                            <div class="res-rating-box">4.2 ★</div>
+                        </div>
+                        <div class="res-row-mid">
+                            <span class="res-cuisine">North Indian, Continental</span>
+                            <span class="res-price">₹2,200 for two</span>
+                        </div>
+                        <div class="res-row-bot">
+                            <span class="res-location">Greater Kailash 2 (GK2)</span>
+                            <span class="res-distance">3.5 km</span>
+                        </div>
+                        <div class="res-separator"></div>
+                        <div class="res-footer">
+                            <span class="res-status warning">Closes in 1 hour 10 minutes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="res-card">
+                    <div class="res-img-header">
+                        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Restaurant Image">
+                        <div class="res-offer-tag">Flat 10% OFF</div>
+                    </div>
+                    <div class="res-info">
+                        <div class="res-row-top">
+                            <h3 class="res-name">Dhaba - Estd 1986 Delhi</h3>
+                            <div class="res-rating-box">4.5 ★</div>
+                        </div>
+                        <div class="res-row-mid">
+                            <span class="res-cuisine">Desserts, Mughlai, North Indian</span>
+                            <span class="res-price">₹1,400 for two</span>
+                        </div>
+                        <div class="res-row-bot">
+                            <span class="res-location">Connaught Place, New Delhi</span>
+                            <span class="res-distance">1.2 km</span>
+                        </div>
+                        <div class="res-separator"></div>
+                        <div class="res-footer">
+                            <span class="res-status">Opens tomorrow at 12pm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="res-card">
+                    <div class="res-img-header">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Restaurant Image">
+                        <div class="res-offer-tag">Flat 15% OFF</div>
+                    </div>
+                    <div class="res-info">
+                        <div class="res-row-top">
+                            <h3 class="res-name">Ivory Fusion Bar</h3>
+                            <div class="res-rating-box">4.4 ★</div>
+                        </div>
+                        <div class="res-row-mid">
+                            <span class="res-cuisine">Cafe, Asian, Modern Indian</span>
+                            <span class="res-price">₹2,000 for two</span>
+                        </div>
+                        <div class="res-row-bot">
+                            <span class="res-location">Connaught Place, New Delhi</span>
+                            <span class="res-distance">1.1 km</span>
+                        </div>
+                        <div class="res-separator"></div>
+                        <div class="res-footer">
+                            <span class="res-status">Live Sports Screening</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="res-card">
+                    <div class="res-img-header">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Restaurant Image" onclick="window.location.href='table_booking1.html'">
+                    </div>
+                    <div class="res-info">
+                        <div class="res-row-top">
+                            <h3 class="res-name">Cafe Hawkers</h3>
+                            <div class="res-rating-box">4.1 ★</div>
+                        </div>
+                        <div class="res-row-mid">
+                            <span class="res-cuisine">Chinese, Fast Food, North Indian</span>
+                            <span class="res-price">₹1,100 for two</span>
+                        </div>
+                        <div class="res-row-bot">
+                            <span class="res-location">Connaught Place, New Delhi</span>
+                            <span class="res-distance">0.8 km</span>
+                        </div>
+                        <div class="res-separator"></div>
+                        <div class="res-footer">
+                            <span class="res-status">Opens tomorrow at 11am</span>
+                        </div>
+                    </div>
+                </div>
+                
+                 <div class="res-card">
+                    <div class="res-img-header">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Restaurant Image">
+                        <div class="res-offer-tag">Flat 20% OFF</div>
+                    </div>
+                    <div class="res-info">
+                        <div class="res-row-top">
+                            <h3 class="res-name">Somewhere Restaurant</h3>
+                            <div class="res-rating-box">4.3 ★</div>
+                        </div>
+                        <div class="res-row-mid">
+                            <span class="res-cuisine">Continental, Asian, Fast Food</span>
+                            <span class="res-price">₹1,800 for two</span>
+                        </div>
+                        <div class="res-row-bot">
+                            <span class="res-location">Connaught Place, New Delhi</span>
+                            <span class="res-distance">1.5 km</span>
+                        </div>
+                        <div class="res-separator"></div>
+                        <div class="res-footer">
+                            <span class="res-status warning">Closes in 50 minutes</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="res-card">
+                    <div class="res-img-header">
+                        <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Restaurant Image">
+                    </div>
+                    <div class="res-info">
+                        <div class="res-row-top">
+                            <h3 class="res-name">Local</h3>
+                            <div class="res-rating-box">4.0 ★</div>
+                        </div>
+                        <div class="res-row-mid">
+                            <span class="res-cuisine">North Indian, Continental</span>
+                            <span class="res-price">₹2,800 for two</span>
+                        </div>
+                        <div class="res-row-bot">
+                            <span class="res-location">Kasturba Gandhi Marg</span>
+                            <span class="res-distance">2.2 km</span>
+                        </div>
+                        <div class="res-separator"></div>
+                        <div class="res-footer">
+                            <span class="res-status warning">Closes in 1 hour</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function scrollGrid(direction) {
+            const container = document.getElementById('scrollGrid');
+            const scrollAmount = 320; 
+            if (direction === 'left') {
+                container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else {
+                container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+    </script>
+
+</body>
+</html>

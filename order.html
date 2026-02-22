@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DashDish Checkout</title>
+<link rel="stylesheet" href="order.css">
+</head>
+<body>
+
+<div class="container">
+
+<!-- LEFT SECTION -->
+<form class="card" id="checkoutForm">
+
+<h2>Delivery Location</h2>
+
+<input type="text" id="address" placeholder="Full Address" required>
+<input type="text" id="city" placeholder="City" required>
+<input type="text" id="pincode" placeholder="Pincode" required>
+
+<h2>Customer Details</h2>
+
+<input type="text" id="name" placeholder="Full Name" required>
+<input type="tel" id="phone" placeholder="Phone Number" required>
+
+<h2>Add-ons</h2>
+
+<label class="addon">
+    <input type="checkbox" class="addon-check" data-price="30">
+    Extra Cheese (+₹30)
+</label>
+
+<label class="addon">
+    <input type="checkbox" class="addon-check" data-price="10">
+    Extra Spicy (+₹10)
+</label>
+
+<label class="addon">
+    <input type="checkbox" class="addon-check" data-price="20">
+    Butter Topping (+₹20)
+</label>
+
+<div class="qty-section">
+<h2>Quantity</h2>
+
+<div class="qty-box">
+    <button type="button" class="qty-btn" id="minus">-</button>
+    <span id="quantity">1</span>
+    <button type="button" class="qty-btn" id="plus">+</button>
+</div>
+</div>
+
+</form>
+
+<!-- RIGHT SECTION -->
+<div class="card">
+
+<h2>Bill Summary</h2>
+
+<div class="bill-line">
+    <span>Item Price</span>
+    <span id="itemPrice">₹200</span>
+</div>
+
+<div class="bill-line">
+    <span>Add-ons</span>
+    <span id="addonTotal">₹0</span>
+</div>
+
+<div class="bill-line">
+    <span>Delivery Charge</span>
+    <span id="deliveryCharge">₹40</span>
+</div>
+
+<div class="bill-line">
+    <span>Platform Fee</span>
+    <span id="platformFee">₹5</span>
+</div>
+
+<div class="bill-line">
+    <span>Taxes (5%)</span>
+    <span id="taxAmount">₹0</span>
+</div>
+
+<div class="bill-line total">
+    <span>Grand Total</span>
+    <span id="grandTotal">₹0</span>
+</div>
+
+<button class="primary" id="placeOrder" onclick="window.location.href='orderconfirmed.html'">Place Order</button>
+
+</div>
+
+</div>
+
+<script src="order.js">
+</script>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: #ff6b6b;
+}Ivoryy Bar
+
+.rating {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #555;
+}
+
+.container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0f0f0;
+}
+
+.card h3 {
+    color: #ff6b6b;
+    margin-bottom: 10px;
+}
+
+.actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.actions button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.share {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.share:hover {
+    background: #d0d0d0;
+}
+
+.review {
+    background: #ff6b6b;
+    color: #fff;
+}
+
+.reservation {
+    margin-top: 50px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eee;
+}
+
+.reservation h2 {
+    text-align: center;
+    color: #ff6b6b;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+form input, form select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: #fdfdfd;
+    outline: none;
+    color: #333;
+}
+
+form input::placeholder {
+    color: #888;
+}
+
+form button {
+    grid-column: span 2;
+    padding: 14px;
+    background: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.discount {
+    margin-top: 30px;
+    background: #fff0f0;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: #333;
+    border: 1px solid #ffdbdb;
+}
+
+.discount span {
+    color: #ff6b6b;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    text-align: center;
+    background: #ffffff;
+    color: #666;
+    font-size: 14px;
+    border-top: 1px solid #e0e0e0;
+}

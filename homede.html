@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashDish</title>
+    <link rel="stylesheet" href="homede.css">
+</head>
+<body>
+     <div class="header-container">
+        <div class="header-left">
+            <a href="homedi.html">
+                <img class="logo" src="logo.png" alt="DashDish Logo">
+            </a>
+        </div>
+
+        <div class="header-center">
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input class="search-input" type="text" placeholder="Find your favorite dish..." name="search">
+                    <button class="search-btn" type="submit">🍽️</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <div class="auth-buttons">
+                <button class="btn-login" onclick="window.location.href='login.html'">Log In</button>
+                <button class="btn-signup" onclick="window.location.href='login.html'">Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <div class="options-section">
+        <div class="content-wrapper options-wrapper">
+             <button class="nav-tab" onclick="window.location.href='homedi.html'">
+                <span class="icon-circle">🍽️</span>
+                Dining Out
+             </button>
+             <button class="nav-tab active">
+                <span class="icon-circle">🛵</span>
+                Delivery
+             </button>
+        </div>
+    </div>
+    <div class="feed-main-container">
+        
+        <div class="feed-section">
+            <h2 class="section-heading">Inspiration for your first order</h2>
+            <div class="circle-grid-row">
+                <div class="circle-item">
+                    <div class="circle-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Biryani">
+                    </div>
+                    <p class="circle-label">Biryani</p>
+                </div>
+                <div class="circle-item">
+                    <div class="circle-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Pizza">
+                    </div>
+                    <p class="circle-label">Pizza</p>
+                </div>
+                <div class="circle-item">
+                    <div class="circle-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Veg Meal">
+                    </div>
+                    <p class="circle-label">Veg Meal</p>
+                </div>
+                <div class="circle-item">
+                    <div class="circle-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Thali">
+                    </div>
+                    <p class="circle-label">Thali</p>
+                </div>
+                <div class="circle-item">
+                    <div class="circle-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Burger">
+                    </div>
+                    <p class="circle-label">Burger</p>
+                </div>
+                <div class="circle-item">
+                    <div class="circle-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Chicken">
+                    </div>
+                    <p class="circle-label">Chicken</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="feed-section">
+            <h2 class="section-heading">Top brands for you</h2>
+            <div class="circle-grid-row">
+                <div class="brand-item">
+                    <div class="brand-img-wrapper">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/McDonald%27s_Golden_Arches.svg" alt="McDonald's">
+                    </div>
+                    <p class="brand-label">McDonald's</p>
+                    <p class="brand-time">30 min</p>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-img-wrapper">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Dominos_pizza_logo.svg" alt="Domino's">
+                    </div>
+                    <p class="brand-label">Domino's Pizza</p>
+                    <p class="brand-time">30 min</p>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-img-wrapper">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Burger_King_2020.svg" alt="Burger King">
+                    </div>
+                    <p class="brand-label">Burger King</p>
+                    <p class="brand-time">35 min</p>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-img-wrapper">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/5/57/KFC_logo-image.svg" alt="KFC">
+                    </div>
+                    <p class="brand-label">KFC</p>
+                    <p class="brand-time">33 min</p>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-img-wrapper">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/9/91/Haldiram%27s_2024_Logo.svg" alt="Haldiram's">
+                    </div>
+                    <p class="brand-label">Haldiram's</p>
+                    <p class="brand-time">34 min</p>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-img-wrapper">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5717/5717439.png" alt="Punjabi Angithi">
+                    </div>
+                    <p class="brand-label">Punjabi Angithi</p>
+                    <p class="brand-time">40 min</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="feed-section">
+            <h2 class="section-heading">Food Delivery Restaurants in Delhi NCR</h2>
+            <div class="restaurant-grid">
+                
+                <div class="rest-card" onclick="window.location.href='order.html'">
+                    <div class="rest-img-container">
+                        <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Apni Rasoi">
+                        <div class="offer-badge">50% OFF</div>
+                    </div>
+                    <div class="rest-info">
+                        <div class="rest-header">
+                            <span class="rest-name">Apni Rasoi</span>
+                            <span class="rest-rating">4.0 ★</span>
+                        </div>
+                        <div class="rest-subtext">
+                            <div class="cuisine-price">North Indian, Chinese</div>
+                            <div class="price">₹200 for one</div>
+                        </div>
+                        <div class="rest-footer">
+                            <span class="delivery-time">29 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rest-card">
+                    <div class="rest-img-container">
+                        <img src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Haldiram's">
+                    </div>
+                    <div class="rest-info">
+                        <div class="rest-header">
+                            <span class="rest-name">Haldiram's</span>
+                            <span class="rest-rating">4.0 ★</span>
+                        </div>
+                        <div class="rest-subtext">
+                            <div class="cuisine-price">North Indian, Mithai</div>
+                            <div class="price">₹200 for one</div>
+                        </div>
+                        <div class="rest-footer">
+                            <span class="delivery-time">34 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rest-card">
+                    <div class="rest-img-container">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/8/21667998/c01a5aaabfee3b0603aa87528cb01f68.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*" alt="Cafe Amudham">
+                        <div class="offer-badge">50% OFF</div>
+                    </div>
+                    <div class="rest-info">
+                        <div class="rest-header">
+                            <span class="rest-name">Cafe Amudham</span>
+                            <span class="rest-rating">4.1 ★</span>
+                        </div>
+                        <div class="rest-subtext">
+                            <div class="cuisine-price">South Indian, Beverages</div>
+                            <div class="price">₹200 for one</div>
+                        </div>
+                        <div class="rest-footer">
+                            <span class="delivery-time">32 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rest-card">
+                    <div class="rest-img-container">
+                        <img src="https://b.zmtcdn.com/data/pictures/chains/9/899/999216e2fdc01f87e5872c18c20b64af.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*" alt="Saravana Bhavan">
+                        <div class="offer-badge">50% OFF</div>
+                    </div>
+                    <div class="rest-info">
+                        <div class="rest-header">
+                            <span class="rest-name">Saravana Bhavan</span>
+                            <span class="rest-rating">4.1 ★</span>
+                        </div>
+                        <div class="rest-subtext">
+                            <div class="cuisine-price">South Indian, Desserts</div>
+                            <div class="price">₹300 for one</div>
+                        </div>
+                        <div class="rest-footer">
+                            <span class="delivery-time">37 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rest-card">
+                    <div class="rest-img-container">
+                        <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="McDonald's">
+                    </div>
+                    <div class="rest-info">
+                        <div class="rest-header">
+                            <span class="rest-name">McDonald's</span>
+                            <span class="rest-rating">4.0 ★</span>
+                        </div>
+                        <div class="rest-subtext">
+                            <div class="cuisine-price">Burger, Wraps, Fast Food</div>
+                            <div class="price">₹200 for one</div>
+                        </div>
+                        <div class="rest-footer">
+                            <span class="delivery-time">31 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rest-card">
+                    <div class="rest-img-container">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="HRX by EatFit">
+                    </div>
+                    <div class="rest-info">
+                        <div class="rest-header">
+                            <span class="rest-name">HRX by EatFit</span>
+                            <span class="rest-rating">4.3 ★</span>
+                        </div>
+                        <div class="rest-subtext">
+                            <div class="cuisine-price">Healthy Food, Salad</div>
+                            <div class="price">₹250 for one</div>
+                        </div>
+                        <div class="rest-footer">
+                            <span class="delivery-time">35 min</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

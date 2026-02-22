@@ -1,0 +1,71 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    font-family:"Segoe UI",sans-serif;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ff6b6b);
+}
+.container{
+    background:#fff;
+    width:360px;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+}
+/* New rule for the logo */
+.container img {
+    display: block;
+    margin: 0 auto 25px auto;
+    max-width: 180px;
+}
+h2{
+    text-align:center;
+    color:#e74c3c;
+    margin-bottom:20px;
+}
+input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:6px;
+}
+input:focus{
+    outline:none;
+    border-color:#e74c3c;
+}
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#e74c3c;
+    color:white;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+}
+button:hover{
+    background:#c0392b;
+}
+p{
+    text-align:center;
+    margin-top:15px;
+    font-size:14px;
+}
+a{
+    color:#e74c3c;
+    text-decoration:none;
+    font-weight:500;
+    cursor:pointer;
+}
+.form{
+    display:none;
+}
+.form.active{
+    display:block;
+}

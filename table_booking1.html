@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ivoryy Fusion Bar</title>
+<link rel="stylesheet" href="table_booking1.css">
+</head>
+
+<body>
+
+<header>
+    <h1>IVORYY FUSION BAR</h1>
+    <div class="rating">⭐ 4.3 Rating | Premium Bar & Lounge</div>
+</header>
+
+<div class="container">
+
+    <!-- Gallery -->
+    <div class="gallery">
+        <img src="project_id3_img1.jpeg" alt="Ivoryy Bar">
+        <img src="project_id3_img2.jpeg" alt="Ivoryy Interior">
+        <img src="project_id3_img3.jpeg" alt="Ivoryy Lounge">
+    </div>
+
+    <!-- Info Section -->
+    <div class="info">
+        <div class="card">
+            <h3>📍 Address</h3>
+            <p>Downtown City Center</p>
+            <p>Direction: City Center Road</p>
+        </div>
+
+        <div class="card">
+            <h3>⏰ Timings</h3>
+            <p>Open: 12:00 PM</p>
+            <p>Close: 12:00 AM</p>
+        </div>
+
+        <div class="card">
+            <h3>💰 Price</h3>
+            <p>₹1500 – ₹2500 for two</p>
+        </div>
+
+        <div class="card">
+            <h3>📞 Contact</h3>
+            <p>Phone: +91 98765 43210</p>
+            <div class="actions">
+                <button class="share">Share</button>
+                <button class="review">Review</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reservation -->
+    <div class="reservation">
+        <h2>Book a Table in Advance</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="date" required>
+            <input type="time" required>
+            <select>
+                <option>No. of Guests</option>
+                <option>2 Guests</option>
+                <option>4 Guests</option>
+                <option>6 Guests</option>
+                <option>8+ Guests</option>
+            </select>
+            <select>
+                <option>Occasion</option>
+                <option>Casual</option>
+                <option>Birthday</option>
+                <option>Anniversary</option>
+                <option>Party</option>
+            </select>
+            <button type="submit">Reserve Table</button>
+        </form>
+
+        <div class="discount">
+            🎉 <span>Flat 20% OFF</span> on advance table bookings before 6 PM!
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Ivoryy Fusion Bar | Crafted for luxury dining
+</footer>
+<script>
+document.querySelector('.reservation form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    window.location.href = 'reserved.html';
+});
+</script>
+
+</body>
+</html>

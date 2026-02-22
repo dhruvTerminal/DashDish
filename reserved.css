@@ -1,0 +1,107 @@
+* {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", "Segoe UI", sans-serif;
+      background: #f4f6f9;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 6px;
+      font-size: 24px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 28px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .payment-options {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .payment-options input {
+      display: none;
+    }
+
+    .payment-options label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: #f8f9fb;
+      cursor: pointer;
+      font-size: 14px;
+      border: 1px solid #e0e0e0;
+      transition: 0.2s ease;
+    }
+
+    .payment-options label span {
+      font-size: 12px;
+      color: #888;
+    }
+
+    .payment-options input:checked + label {
+      border: 2px solid #ec9898;
+      background: #eef4ff;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      border-radius: 14px;
+      border: none;
+      background: #e14e38;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .success {
+      display: none;
+      margin-top: 24px;
+      padding: 18px;
+      border-radius: 14px;
+      text-align: center;
+      font-size: 15px;
+      background: #e6f7ee;
+      color: #1b7f4c;
+      border: 1px solid #b7e4cc;
+    }

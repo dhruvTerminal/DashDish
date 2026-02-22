@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirm Payment</title>
+  <link rel="stylesheet" href="reserved.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Almost Done ✨</h1>
+    <div class="subtitle">Choose your payment method</div>
+
+    <label>Payment Method</label>
+    <div class="payment-options">
+      <input type="radio" name="payment" id="upi" checked />
+      <label for="upi">UPI <span>Instant Payment</span></label>
+
+      <input type="radio" name="payment" id="card" />
+      <label for="card">Card <span>Debit / Credit</span></label>
+
+      <input type="radio" name="payment" id="cash" />
+      <label for="cash">Pay at Restaurant <span>Cash</span></label>
+    </div>
+
+    <button onclick="window.location.href='booking.html'">
+      Confirm & Pay
+    </button>
+
+    <div class="success" id="successMsg">
+      🎉 Your table is booked successfully!<br />
+      See you soon at our restaurant.
+    </div>
+  </div>
+</body>
+</html>

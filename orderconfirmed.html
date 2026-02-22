@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed - DashDish</title>
+    <link rel="stylesheet" href="homede.css">
+    <link rel="stylesheet" href="orderconfirmed.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <div class="header-left">
+            <a href="homedi.html">
+                <img class="logo" src="logo.png" alt="DashDish Logo">
+            </a>
+        </div>
+
+        <div class="header-center">
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <input class="search-input" type="text" placeholder="Find your favorite dish..." name="search">
+                    <button class="search-btn" type="submit">🍽️</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <div class="auth-buttons">
+                <button class="btn-login" onclick="window.location.href='login.html'">Log In</button>
+                <button class="btn-signup" onclick="window.location.href='login.html'">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="order-main">
+        <div class="order-wrapper">
+            <!-- Left: Order Details -->
+            <div class="order-details-card">
+                <div class="order-section-title">Order Confirmed <span class="success-indicator">✅</span></div>
+                <div class="order-info">Restaurant: Apni Rasoi</div>
+                <div class="order-info">Order ID: #DD10234</div>
+                <div class="order-info">Estimated Delivery: <span id="estimated-time">29 minutes</span></div>
+                <div class="order-info">Delivery Address: 123 Example Street, Delhi, 110001</div>
+
+                <!-- Progress Tracker -->
+                <div class="order-section-title" style="margin-top: 20px;">Order Status</div>
+                <div class="progress-tracker">
+                    <div class="progress-step active" id="step-0">
+                        <div class="step-icon">1</div>
+                        Order Confirmed
+                    </div>
+                    <div class="progress-step" id="step-1">
+                        <div class="step-icon">2</div>
+                        Preparing Food
+                    </div>
+                    <div class="progress-step" id="step-2">
+                        <div class="step-icon">3</div>
+                        Out for Delivery
+                    </div>
+                    <div class="progress-step" id="step-3">
+                        <div class="step-icon">4</div>
+                        Delivered
+                    </div>
+                </div>
+
+                <!-- Status Message -->
+                <div class="status-message" id="status-message">Your order has been confirmed.</div>
+
+                <!-- Countdown -->
+                <div class="countdown" id="countdown">Arriving in 29:00</div>
+
+                <!-- Buttons -->
+                <div class="action-buttons">
+                    <button class="action-btn" onclick="window.location.href='homede.html'">Back to Home</button>
+                    <button class="action-btn secondary" onclick="window.location.href='contact.html'">Contact Support</button>
+                </div>
+            </div>
+
+            <!-- Right: Tracking Map -->
+            <div class="tracking-map-card">
+                <div class="order-section-title">Tracking Your Order</div>
+                <div class="rider-info">Rider: Rahul</div>
+                <div class="rider-info">Contact: +91 9876543210</div>
+                <div class="rider-info">Vehicle: Bike</div>
+
+                <div class="map-container" style="margin-top: 20px;">
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        style="border:0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.2000000000003!2d77.231!3d28.6139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjhCsDM2JzUwLjQiTiA3N8KwMTMnNTIuOCJF!5e0!3m2!1sen!2sin!4v1600000000000"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="orderconfirmed.js">
+    </script>
+</body>
+</html>
